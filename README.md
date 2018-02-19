@@ -1,2 +1,2 @@
 # xogame
-Basic XO Game in HTML and java script
+Basic XO Game in HTML && java script
