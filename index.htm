@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>XO Game</title>
+    <script type="text/javascript" src="script.js"></script>
+	</head>
+	<body id="home">
+	    <h1 >X-O</h1>
+	    <p>Score:<b id="x">0</b>:<b id="y">0</b></p>
+	<svg height="100%" width="100%">
+	    <rect width="33%" height="33%" x="0" y="0" fill="rgb(255,255,255)" onclick="a11()" />
+        <rect width="33%" height="33%" x="33.3%" y="0" fill="rgb(255,255,255)" onclick="a12()" />
+        <rect width="33%" height="33%" x="66.6%" y="0" fill="rgb(255,255,255)" onclick="a13()" />
+        <rect width="33%" height="33%" x="0" y="33.3%" fill="rgb(255,255,255)" onclick="a21()" />
+        <rect width="33%" height="33%" x="33.3%" y="33.3%" fill="rgb(255,255,255)" onclick="a22()" />
+        <rect width="33%" height="33%" x="66.6%" y="33.3%" fill="rgb(255,255,255)" onclick="a23()" />
+        <rect width="33%" height="33%" x="0" y="66.6%" fill="rgb(255,255,255)" onclick="a31()" />
+        <rect width="33%" height="33%" x="33.3%" y="66.6%" fill="rgb(255,255,255)" onclick="a32()" />
+        <rect width="33%" height="33%" x="66.6%" y="66.6%" fill="rgb(255,255,255)" onclick="a33()" />
+	<g>
+	<line x1="9%" y1="26%" x2="26%" y2="9%" visibility="hidden" style="stroke:rgb(0,0,0);stroke-width:2" />  
+	<line x1="9%" y1="9%" x2="26%" y2="26%" visibility="hidden" style="stroke:rgb(0,0,0);stroke-width:2" />   
+	</g>
+		<g>
+	<line x1="41.5%" y1="26%" x2="58.5%" y2="9%" visibility="hidden" style="stroke:rgb(0,0,0);stroke-width:2" /> 
+	<line x1="41.5%" y1="9%" x2="58.5%" y2="26%" visibility="hidden" style="stroke:rgb(0,0,0);stroke-width:2" /> 
+	</g>
+		<g>
+	<line x1="74%" y1="26%" x2="91%" y2="9%" visibility="hidden" style="stroke:rgb(0,0,0);stroke-width:2" /> 
+	<line x1="74%" y1="9%" x2="91%" y2="26%" visibility="hidden" style="stroke:rgb(0,0,0);stroke-width:2" />    
+	</g>
+	
+	
+	
+		<g>
+	<line x1="9%" y1="58.5%" x2="26%" y2="41.5%" visibility="hidden" style="stroke:rgb(0,0,0);stroke-width:2" />  
+	<line x1="9%" y1="41.5%" x2="26%" y2="58.5%" visibility="hidden" style="stroke:rgb(0,0,0);stroke-width:2" /> 
+	</g>
+		<g>
+	<line x1="41.5%" y1="58.5%" x2="58.5%" y2="41.5%" visibility="hidden" style="stroke:rgb(0,0,0);stroke-width:2" /> 
+	<line x1="41.5%" y1="41.5%" x2="58.5%" y2="58.5%" visibility="hidden" style="stroke:rgb(0,0,0);stroke-width:2" />
+	</g>
+		<g>
+	<line x1="74%" y1="58.5%" x2="91%" y2="41.5%" visibility="hidden" style="stroke:rgb(0,0,0);stroke-width:2" /> 
+	<line x1="74%" y1="41.5%" x2="91%" y2="58.5%" visibility="hidden" style="stroke:rgb(0,0,0);stroke-width:2" /> 
+	</g>
+	
+			<g>
+	<line x1="9%" y1="91%" x2="26%" y2="74%" visibility="hidden" style="stroke:rgb(0,0,0);stroke-width:2" />  
+	<line x1="9%" y1="74%" x2="26%" y2="91%" visibility="hidden" style="stroke:rgb(0,0,0);stroke-width:2" />    
+	</g>
+		<g>
+	<line x1="41.5%" y1="91%" x2="58.5%" y2="74%" visibility="hidden" style="stroke:rgb(0,0,0);stroke-width:2" />
+	<line x1="41.5%" y1="74%" x2="58.5%" y2="91%" visibility="hidden" style="stroke:rgb(0,0,0);stroke-width:2" />
+	</g>
+		<g>
+	<line x1="74%" y1="91%" x2="91%" y2="74%" visibility="hidden" style="stroke:rgb(0,0,0);stroke-width:2" /> 
+	<line x1="74%" y1="74%" x2="91%" y2="91%" visibility="hidden" style="stroke:rgb(0,0,0);stroke-width:2" />  
+	</g>
+	
+	
+	<circle id="krug" cx="17.5%" cy="17.5%" r="8%" visibility="hidden" stroke="rgb(0,0,0)" fill="rgb(0,0,0)" stroke-width="2" />
+	<circle id="krug" cx="50%" cy="17.5%" r="8%" visibility="hidden" stroke="rgb(0,0,0)" fill="rgb(0,0,0)" stroke-width="2" />
+	<circle id="krug" cx="82.5%" cy="17.5%" r="8%" visibility="hidden" stroke="rgb(0,0,0)" fill="rgb(0,0,0)" stroke-width="2" />
+	<circle id="krug" cx="17.5%" cy="50%" r="8%" visibility="hidden" stroke="rgb(0,0,0)" fill="rgb(0,0,0)" stroke-width="2" />
+	<circle id="krug" cx="50%" cy="50%" r="8%" visibility="hidden" stroke="rgb(0,0,0)" fill="rgb(0,0,0)" stroke-width="2" />
+	<circle id="krug" cx="82.5%" cy="50%" r="8%" visibility="hidden" stroke="rgb(0,0,0)" fill="rgb(0,0,0)" stroke-width="2" />
+	<circle id="krug" cx="17.5%" cy="82.5%" r="8%" visibility="hidden" stroke="rgb(0,0,0)" fill="rgb(0,0,0)" stroke-width="2" />
+	<circle id="krug" cx="50%" cy="82.5%" r="8%" visibility="hidden" stroke="rgb(0,0,0)" fill="rgb(0,0,0)" stroke-width="2" />
+	<circle id="krug" cx="82.5%" cy="82.5%" r="8%" visibility="hidden" stroke="rgb(0,0,0)" fill="rgb(0,0,0)" stroke-width="2" />
+	
+	
+    <line x1="0%" y1="17.5%" x2="100%" y2="17.5%" visibility="hidden" style="stroke:rgb(255,0,0);stroke-width:2" /> //redhor1
+    <line x1="0%" y1="50%" x2="100%" y2="50%" visibility="hidden" style="stroke:rgb(255,0,0);stroke-width:2" /> //redhor2
+    <line x1="0%" y1="82.5%" x2="100%" y2="82.5%" visibility="hidden" style="stroke:rgb(255,0,0);stroke-width:2" /> //redhor3
+    
+    <line x1="17.5%" y1="100%" x2="17.5%" y2="0" visibility="hidden" style="stroke:rgb(255,0,0);stroke-width:2" /> //redver1
+    <line x1="50%" y1="100%" x2="50%" y2="0" visibility="hidden" style="stroke:rgb(255,0,0);stroke-width:2" />   //redver2
+    <line x1="82.5%" y1="100%" x2="82.5%" y2="0" visibility="hidden" style="stroke:rgb(255,0,0);stroke-width:2" /> //redver3
+    
+    
+    <line x1="0" y1="0" x2="100%" y2="100%" visibility="hidden" style="stroke:rgb(255,0,0,0.7);stroke-width:2" />    //red-rightslope
+    <line x1="0" y1="100%" x2="100%" y2="0" visibility="hidden" style="stroke:rgb(255,0,0,0.7);stroke-width:2" />  // red-leftslope
+
+    
+    <line x1="0" y1="33.3%" x2="100%" y2="33.3%" style="stroke:rgb(0,0,0);stroke-width:2;" /> //black-ver1
+	<line x1="0" y1="66.6%" x2="100%" y2="66.6%" style="stroke:rgb(0,0,0);stroke-width:2" /> //black-ver2
+	<line x1="33.3%" y1="100%" x2="33.3%" y2="0" style="stroke:rgb(0,0,0);stroke-width:2" /> //black-hor1
+	<line x1="66.6%" y1="0%" x2="66.6%" y2="100%" style="stroke:rgb(0,0,0);stroke-width:2" /> //black-hor2
+
+</svg> 	
+<p id="output"></p>
+	</body>
+</html>
